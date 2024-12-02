@@ -1,0 +1,130 @@
+/* MieManja.css */
+
+/* Styling utama untuk container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #d3d3d3;
+  }
+  
+  /* Styling untuk Sidebar */
+  .Navbar {
+    background-color: #bfbfbf;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px 0;
+  }
+  
+  .Nav {
+    font-size: 1.2rem;
+  }
+  
+  .Nav .Nav-item {
+    margin-bottom: 20px;
+  }
+  
+  .Nav .Nav-link {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .Nav .Nav-link:hover {
+    background-color: #c0c0c0;
+    border-radius: 8px;
+  }
+  
+  .Nav .Nav-link svg {
+    margin-right: 10px;
+  }
+  
+  /* Styling untuk bagian konten */
+  .content-container {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .content-container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .content-container h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .content-container p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  /* Grid untuk item menu */
+  .menu-item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Styling untuk kartu menu */
+  .menu-card {
+    background-color: #d3d3d3;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .menu-card img {
+    border-radius: 8px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .menu-card .card-body {
+    padding: 10px 0;
+  }
+  
+  .menu-card .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .menu-card .text-muted {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .menu-card .price-tag {
+    background-color: #bfbfbf;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  /* Styling untuk button "Add to Cart" */
+  .menu-card .add-to-cart-btn {
+    font-size: 1.5rem;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-card .add-to-cart-btn:hover {
+    color: #000;
+  }
+  

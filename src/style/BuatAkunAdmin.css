@@ -1,0 +1,62 @@
+/* Gaya untuk container buat akun */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+    background: linear-gradient(to bottom, hwb(29 0% 0%), #FF0000); /* Gradien warna dari oranye ke merah */
+    color: white;
+    font-size: 1.2em; /* Menambah ukuran teks pada container */
+  }
+  
+  /* Gaya untuk tulisan "Buat Akun" */
+  .font-1 {
+    font-size: 3em; /* Memperbesar ukuran teks */
+    color: #000000; /* Menentukan warna teks hitam */
+  }
+  
+  /* Gaya untuk input form agar lebih panjang */
+  .form-control {
+    width: 90%;  /* Lebar input 90% dari lebar container */
+    max-width: 500px; /* Max width agar input tidak terlalu besar */
+    margin: 7px 0; /* Memberikan jarak antara input */
+    padding: 15px;  /* Menambah padding agar lebih nyaman digunakan */
+    font-size: 1.1em; /* Ukuran font di dalam input */
+    border-radius: 8px;  /* Membuat sudut input lebih melengkung */
+  }
+  
+  /* Gaya untuk tombol Buat Akun */
+  .login-button {
+    background-color: #ffc400; /* Warna kuning yang lebih cerah */
+    color: black;
+    padding: 15px 30px; /* Memperbesar padding untuk proporsi */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 18px; /* Memperbesar ukuran teks tombol */
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #FF7A00; /* Mengubah warna tombol saat di-hover */
+  }
+  
+  /* Gaya untuk link */
+  a {
+    color: #000000; /* Warna default hitam */
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.2em; /* Memperbesar ukuran teks link */
+  }
+  
+  a:hover {
+    color: #ffa600; /* Warna ketika di-hover menjadi oranye */
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+  }
+  
+  a:active {
+    color: #FF0000; /* Warna ketika ditekan (saat diklik) menjadi merah */
+  }

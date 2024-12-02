@@ -1,0 +1,100 @@
+/* src/style/Wizzmie.css */
+
+.wizzmie-container {
+    text-align: left;
+    padding: 20px;
+    margin-top: 30px; /* Mengurangi jarak dari atas */
+  }
+
+ /* Teks Selamat Datang */
+.wizzmie-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  /* Kolom Pencarian */
+  .search-bar {
+    max-width: 300px;
+    margin: 0 auto 40px; /* Menambahkan jarak bawah untuk memberikan ruang dengan menu */
+  }
+  
+  /* Menu Item Container */
+  .menu-item-container {
+    display: flex;
+    gap: 20px; /* Mengurangi jarak antar kartu */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px !important; /* Mengurangi jarak dari kolom pencarian */
+    max-height: 500px; /* Membatasi tinggi maksimum kontainer menu */
+    overflow-y: auto; /* Mengaktifkan scroll vertikal jika konten melebihi tinggi */
+  }
+  
+  /* Kartu Menu */
+  .menu-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 30px; /* Menambah jarak di bawah setiap kartu */
+  }
+  
+  /* Efek Hover pada Kartu */
+  .menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .menu-card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .menu-card .card-body {
+    padding: 20px;
+  }
+  
+  .menu-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .menu-card .card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .no-results {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  /* Media query untuk tampilan di perangkat kecil */
+  @media (max-width: 768px) {
+    .wizzmie-container {
+      margin-top: 60px; /* Menyesuaikan margin pada perangkat kecil */
+    }
+  
+    .menu-item-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px; /* Mengurangi jarak pada perangkat kecil */
+    }
+  
+    .menu-card {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    /* Sidebar untuk perangkat kecil */
+    .Navbar {
+      position: relative; /* Tidak fixed pada perangkat kecil */
+    }
+  }

@@ -1,0 +1,132 @@
+/* src/style/Card.css */
+
+.card-container {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    margin-top: 120px;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    width: 100%;
+    max-width: 350px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    -webkit-transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    -ms-transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+  
+  .card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;/* src/style/Card.css */
+  
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 70px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      -webkit-transform: translateY(-5px);
+      -moz-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      -o-transform: translateY(-5px);
+}
+    
+    .card img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      height: 220px;
+      object-fit: cover;
+    }
+    
+    .card-body {
+      padding: 20px;
+    }
+    
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .card-text {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    
+    .card .btn-primary {
+      background-color: #007bff;
+      border: none;
+      font-weight: bold;
+    }
+    
+    .card .btn-primary:hover {
+      background-color: #0056b3;
+    }
+    
+    /* Media query untuk menampilkan kartu secara vertikal pada layar kecil */
+    @media (max-width: 768px) {
+      .card-container {
+        flex-direction: column; /* Mengatur kartu menjadi kolom pada layar kecil */
+        align-items: center; /* Menyeimbangkan kartu secara horizontal */
+      }
+    
+      .card {
+        width: 100%; /* Memastikan kartu mengambil lebar penuh pada layar kecil */
+        max-width: 100%;
+      }
+    }
+    
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .card .btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .card .btn-primary:hover {
+    background-color: #0056b3;
+  }

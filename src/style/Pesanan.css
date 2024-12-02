@@ -1,0 +1,124 @@
+/* Pesanan.css */
+
+/* Mengatur tinggi penuh dan padding untuk container utama */
+.container-fluid.bg-light {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sisi navigasi dengan background dan padding */
+.bg-secondary {
+  height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bg-secondary h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Navigasi */
+.nav-item .nav-link {
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-item .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Header konten utama */
+.mt-4 {
+  margin-top: 2rem !important;
+}
+
+.border {
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+/* Gaya untuk judul dan daftar kolom item pesanan */
+.text-center.font-weight-bold {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Item Pesanan */
+.order-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-item div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* Harga per item dan total */
+.order-item-price,
+.total-price {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Pengaturan kontrol jumlah */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quantity-controls button {
+  padding: 0 8px;
+}
+
+.quantity-controls span {
+  font-size: 16px;
+  width: 24px;
+  text-align: center;
+}
+
+/* Total Pesanan */
+.total-pesanan {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Tombol Pesan */
+.pesan-btn {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+/* Select box */
+#metodePembayaran {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
+}
+
+.pilih-semua {
+  margin-top: 5px;
+}

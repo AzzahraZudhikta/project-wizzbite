@@ -1,0 +1,21 @@
+/* Mengurangi jarak untuk teks Selamat Datang dan Daftar Menu Mie Goyang */
+.content h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-top: 0; /* Menghapus atau mengurangi jarak atas */
+  margin-bottom: 10px; /* Mengurangi jarak bawah */
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px; /* Mengurangi jarak atas */
+  margin-bottom: 5px; /* Mengurangi jarak bawah */
+}
+
+.content p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 5px; /* Mengurangi jarak atas */
+  margin-bottom: 15px; /* Mengurangi jarak bawah */
+}

@@ -1,0 +1,153 @@
+/* Warna latar belakang halaman */
+.bg-color {
+  background-color: #5C828A;
+}
+
+/* Styling Sidebar */
+.sidebar {
+  background-color: #5C828A;
+  color: white;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  color: white;
+}
+
+.sidebar-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: white;
+  font-size: 1.1em;
+}
+
+.nav-link:hover {
+  color: lightgray;
+}
+
+/* Area Konten Utama */
+.content-area {
+  height: 100vh; /* Set tinggi penuh untuk viewport */
+  overflow-y: auto; /* Aktifkan scroll vertikal */
+  padding-bottom: 20px; /* Tambahkan padding bawah untuk ruang ekstra */
+}
+
+.confirmation-card {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ikon centang */
+.check-icon {
+  color: #4CAF50;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.total-transaksi {
+  font-size: 1.2em;
+  color: #333;
+  margin: 10px 0;
+}
+
+.total-harga {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #000;
+}
+
+.ref-number {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Detail Transaksi */
+.transaction-details {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  margin-top: 20px;
+}
+
+.detail-section {
+  margin-top: 10px;
+}
+
+.section-title {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.detail-info {
+  font-size: 1em;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.small-text {
+  color: #888;
+  font-size: 0.9em;
+}
+
+/* Styling untuk nomor rekening di bawah BANK BRI */
+.bank-name {
+  font-weight: bold;
+  color: #333;
+  margin-top: 2px !important;
+}
+
+.account-number {
+  color: #888;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Styling Kotak di sekitar nama */
+.name-box {
+  display: inline-block;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Tombol Aksi */
+.action-button {
+  width: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-icon {
+  margin-right: 5px;
+}
+
+.save-button {
+  margin-top: 10px; /* Tambahkan spasi antara baris tombol */
+}

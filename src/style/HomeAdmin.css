@@ -1,0 +1,57 @@
+.dashboard-overview {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.dashboard-overview .content-container {
+  display: flex;
+  flex: 1;
+  margin-top: 38px;
+  padding-left: 300px; /* Geser kontainer ke kanan */
+  padding-right: 80px;
+}
+
+.dashboard-overview .content-container .main-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; /* Geser konten ke kanan */
+  align-items: flex-start;
+  padding: 20px;
+  padding-top: 20px;
+  background-color: #5C828A;
+  overflow-y: auto;
+  margin-left: 20px; /* Tambahkan jarak dari sisi kiri */
+}
+
+.dashboard-overview .content-container .main-content .visitor-report-container {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.dashboard-overview .content-container .main-content .visitor-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+
+.dashboard-overview .content-container .main-content .dashboard-chart {
+  background-color: #D9D9D9;
+  border-radius: 50px;
+  height: 450px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-left: 20px; /* Geser chart ke kanan */
+}
+
+.dashboard-overview .content-container .main-content .dashboard-chart p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}

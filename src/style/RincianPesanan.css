@@ -1,0 +1,59 @@
+/* Sidebar Styles */
+.sidebar {
+    background-color: #f8f9fa; /* Warna latar belakang sidebar */
+    min-height: 100vh; /* Sidebar sepanjang viewport */
+    border-right: 1px solid #ddd; /* Garis pemisah */
+}
+
+.sidebar .nav-link {
+    color: #333;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+
+/* Rincian Pesanan Styles */
+.rincian-pesanan {
+    margin-top: 20px;
+}
+
+.rincian-pesanan .custom-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    border: none;
+    border-radius: 8px;
+}
+
+.rincian-pesanan .custom-table {
+    text-align: center;
+}
+
+.rincian-pesanan .custom-table th,
+.rincian-pesanan .custom-table td {
+    vertical-align: middle;
+}
+
+.rincian-pesanan .total-row {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.payment-info {
+    margin-top: 20px;
+}
+
+.payment-info .row {
+    margin-bottom: 10px;
+}
+
+.payment-info .text-end {
+    font-weight: bold;
+}
+
+/* Button styles */
+.rincian-pesanan .btn {
+    border-radius: 5px;
+}

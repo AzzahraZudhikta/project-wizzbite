@@ -1,0 +1,74 @@
+/* Gaya untuk container login */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+    background: linear-gradient(to bottom, #FF7A00, #FF0000); /* Gradien warna dari oranye ke merah */
+    color: white;
+    font-size: 1.2em; /* Menambah ukuran teks pada container */
+}
+
+/* Gaya untuk judul "Berhasil Masuk" */
+.font-1 {
+    font-size: 3em; /* Memperbesar ukuran teks */
+    color: #000000; /* Warna teks hitam */
+}
+
+/* Gaya untuk input form agar lebih panjang */
+.form-control {
+    width: 90%;  /* Lebar input 90% dari lebar container */
+    max-width: 500px; /* Lebar maksimum agar input tidak terlalu besar */
+    margin: 10px 0; /* Jarak antara input */
+    padding: 15px;  /* Padding untuk kenyamanan */
+    font-size: 1.1em; /* Ukuran font dalam input */
+    border-radius: 8px;  /* Membuat sudut input melengkung */
+}
+
+/* Gaya untuk tombol Lanjutkan */
+.login-button {
+    background-color: #ffc400; /* Warna kuning cerah */
+    color: black;
+    padding: 15px 30px; /* Padding besar agar proporsional */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 18px; /* Ukuran teks tombol */
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #FF7A00; /* Warna tombol saat di-hover */
+}
+
+/* Gaya untuk link */
+a {
+    color: #000000; /* Warna teks hitam */
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.2em; /* Ukuran teks link */
+}
+
+a:hover {
+    color: #ffa600; /* Warna oranye saat di-hover */
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+a:active {
+    color: #FF0000; /* Warna merah saat link diklik */
+}
+
+/* Gaya untuk kartu */
+.card {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 30px;
+}

@@ -1,0 +1,176 @@
+/* Reset Body and HTML */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #3A5A5D; /* Warna latar belakang sidebar */
+    color: white; /* Warna teks di sidebar */
+    width: 240px; /* Lebar sidebar */
+    height: 100vh; /* Tinggi sidebar sesuai viewport */
+    position: fixed; /* Tetap di tempat saat scroll */
+    left: 0; /* Posisi di paling kiri */
+    top: 0; /* Posisi dimulai dari atas */
+    padding: 20px 0;
+    overflow-y: auto; /* Memberikan scroll agar bisa digeser ke bawah */
+}
+
+.sidebar .sidebar-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #F5F5F5;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar .nav-link {
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link.active {
+    font-weight: bold;
+    background-color: #F5F5F5;
+    color: #3A5A5D;
+    border-left: 5px solid #333;
+    border-radius: 8px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #5C828A;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 240px; /* Offset for sidebar */
+    padding: 20px;
+    background-color: #F5F5F5;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.welcome-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3A5A5D;
+    margin-bottom: 20px;
+}
+
+/* Informasi Pengguna */
+.user-info {
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.user-info .user-avatar {
+    background-color: #CCC;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.user-info p {
+    margin: 0;
+    padding: 0 10px;
+    color: #333;
+}
+
+.user-info p:first-child {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.user-info p.text-muted {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Card Styling */
+.pesanan-card {
+    background-color: #E7E7E7;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.pesanan-card h6 {
+    font-weight: bold;
+    color: #3A5A5D;
+    margin-bottom: 10px;
+}
+
+.pesanan-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.pesanan-card .text-muted {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Gambar placeholder dan gambar pada kartu */
+.order-img-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    /* Hapus border-radius untuk menjadikannya kotak */
+    margin: auto;
+}
+
+/* Mengatur gambar dalam kartu agar berbentuk kotak dan lebih besar */
+.pesanan-card img {
+    width: 120px;  /* Membuat gambar lebih lebar */
+    height: 120px; /* Membuat gambar lebih tinggi */
+    object-fit: cover; /* Menjaga proporsi gambar */
+    /* Hapus border-radius untuk gambar kotak */
+}
+
+/* Buttons */
+button {
+    background-color: #3A5A5D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #5C828A;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar-title {
+        text-align: center;
+    }
+}

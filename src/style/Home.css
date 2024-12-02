@@ -1,0 +1,44 @@
+.mie-list-container {
+  margin: 20px auto;
+  max-width: 1000px; /* Lebar maksimum */
+  text-align: center; /* Memusatkan teks di dalam kontainer */
+}
+
+/* Gaya untuk setiap item mie */
+.mie-item {
+  background-color: #f77000; /* Warna latar belakang */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Memastikan setiap item berada di tengah */
+  max-width: 600px; /* Lebar maksimum untuk setiap item */
+  text-align: left; /* Teks rata kiri di dalam item */
+}
+
+/* Judul setiap item */
+.mie-item h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center; /* Memusatkan judul */
+}
+
+/* Gambar di dalam item */
+.mie-item img {
+  width: 100%; /* Gambar memenuhi lebar kontainer item */
+  height: auto;
+  border-radius: 8px;
+  display: block; /* Menghapus jarak bawaan */
+  margin: 0 auto; /* Memastikan gambar di tengah */
+}
+
+/* Deskripsi item */
+.mie-item p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Gaya untuk teks tebal */
+.mie-item strong {
+  color: #333;
+}
