@@ -1,0 +1,163 @@
+/* Rating Card */
+.rating-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.rating-number-large {
+    font-size: 3rem; /* Ukuran font yang lebih besar */
+  }
+  
+  .rating-label {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+.rating-number {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.rating-stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.rating-stars .active {
+    color: #ffc107; /* Warna bintang aktif */
+    font-size: 1,5rem;
+}
+
+.rating-label {
+    font-size: 1rem;
+    color: #6c757d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rating-line {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    width: 80%;
+    margin: 0 auto 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.rating-line-filled {
+    background-color: #007bff;
+    height: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* Ulasan Card */
+.ulasan-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.ulasan-card .user-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.ulasan-card .time {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.ulasan-card .review-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.ulasan-card .image-grid {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.ulasan-card .image-grid img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* Membuat kolom komentar lebih lebar */
+.textarea-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    max-width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 100px; /* Menambah tinggi textarea agar terlihat lebih besar */
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

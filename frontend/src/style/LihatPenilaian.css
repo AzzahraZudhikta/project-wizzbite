@@ -1,0 +1,161 @@
+/* Reset Body and HTML */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif; /* Font default */
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    background-color: #D9D9D9; /* Abu-abu sidebar */
+    color: #333;
+    width: 250px;
+    height: 100vh;
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto; /* Scroll jika konten melebihi */
+  }
+  
+  .sidebar .sidebar-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .sidebar .nav-link {
+    color: #333;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar .nav-link.active {
+    font-weight: bold;
+    background-color: #B3B3B3;
+    border-left: 5px solid #333;
+  }
+  
+  .sidebar .nav-link:hover {
+    background-color: #CFCFCF;
+  }
+  
+  /* Main Content */
+  .main-content {
+    margin-left: 250px; /* Menyesuaikan dengan lebar sidebar */
+    padding: 20px;
+  }
+  
+  /* Welcome Text */
+  .welcome-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Review Card */
+  .user-review {
+    background-color: #ffffff;
+    border: 1px solid #D3D3D3;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  }
+  
+  /* Review User Profile */
+  .user-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .username {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .review-date {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  /* User Rating */
+  .user-rating {
+    font-size: 1.2rem;
+    color: #FFD700;
+  }
+  
+  /* Review Images Placeholder */
+  .review-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .review-img {
+    width: 50px;
+    height: 50px;
+    background-color: #E9E9E9;
+    border: 1px solid #D3D3D3;
+    border-radius: 4px;
+  }
+  
+  /* Delete Button */
+  button.btn-danger {
+    margin-top: 10px;
+    background-color: #FF6B6B;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn-danger:hover {
+    background-color: #FF4C4C;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .main-content {
+      margin-left: 200px;
+      padding: 15px;
+    }
+  
+    .sidebar {
+      width: 200px;
+      padding: 15px 0;
+    }
+  
+    .sidebar .nav-link {
+      font-size: 1rem;
+    }
+  
+    .welcome-text {
+      font-size: 1.6rem;
+    }
+  
+    .user-review {
+      padding: 15px;
+    }
+  
+    .review-img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    button.btn-danger {
+      font-size: 0.8rem;
+      padding: 4px 8px;
+    }
+  }
+  

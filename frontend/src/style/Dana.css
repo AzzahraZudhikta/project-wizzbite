@@ -1,0 +1,85 @@
+/* Gaya untuk kontainer utama */
+.dana-container {
+    background-color: #f8f9fa; /* Warna latar belakang terang */
+    min-height: 100vh; /* Tinggi penuh */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    background-color: #343a40; /* Warna gelap untuk sidebar */
+    color: #ffffff; /* Teks putih */
+    border-radius: 8px; /* Membuat sudut melengkung */
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar .nav-item {
+    margin: 10px 0;
+  }
+  
+  .sidebar .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .sidebar .nav-link:hover {
+    background-color: #495057; /* Warna latar saat hover */
+    border-radius: 4px;
+    color: #ffffff;
+    padding-left: 10px;
+  }
+  
+  /* Card utama */
+  .card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan */
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #212529; /* Warna teks utama */
+    margin-bottom: 1rem;
+  }
+  
+  /* Form styling */
+  form label {
+    font-weight: bold;
+    color: #212529;
+  }
+  
+  form .form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+  }
+  
+  form .form-control:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #80bdff;
+  }
+  
+  /* Tombol Lanjutkan */
+  button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }

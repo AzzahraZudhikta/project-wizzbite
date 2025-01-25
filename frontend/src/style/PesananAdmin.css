@@ -1,0 +1,87 @@
+/* Menghilangkan container biru pada .dashboard-overview */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* Menghilangkan scroll */
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 0;
+    margin: 0; /* Menghilangkan margin agar tidak menyebabkan scroll */
+    overflow: auto; /* Memungkinkan scroll hanya jika diperlukan */
+  }
+  
+  .order-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .order-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 50px; /* Tambahkan jarak bawah */
+    margin-top: 50px; /* Tambahkan jarak atas */
+    margin-left: 100px;
+    text-align: center; /* Pastikan teks tetap di tengah */
+  }
+  
+  
+  .order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 950px;
+    margin-left: 200px;
+  }
+  
+  .order-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  .order-info {
+    flex: 1;
+  }
+  
+  .order-id {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .order-name,
+  .order-method,
+  .order-total {
+    font-weight: normal;
+  }
+  
+  .order-action {
+    flex: 0 0 auto;
+    text-align: right;
+  }
+  
+  .detail-button {
+    background-color: #888;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .detail-button:hover {
+    background-color: #555;
+  }
+  

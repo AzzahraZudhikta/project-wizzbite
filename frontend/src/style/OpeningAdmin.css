@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Permanent+Marker&display=swap');
+
+.opening-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Mengisi seluruh tinggi layar */
+  background: linear-gradient(to right, #FF5733, #C70039); /* Warna latar untuk admin */
+}
+
+.brand-link {
+  text-decoration: none; /* Hilangkan garis bawah */
+  color: white;
+}
+
+.font-1 {
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 3rem;
+  margin-right: 0.5rem;
+  color: black; /* Tambahkan properti untuk membuat warna teks menjadi hitam */
+}
+
+.font-2 {
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 3rem;
+}

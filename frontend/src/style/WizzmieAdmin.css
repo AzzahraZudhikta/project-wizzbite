@@ -1,0 +1,121 @@
+/* Reset margin dan padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style untuk main content di WizzmieAdmin */
+.wizzmie-admin .main-content {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+}
+
+/* Style untuk menu header di WizzmieAdmin */
+.wizzmie-admin .menu-header {
+    display: flex;
+    justify-content: center; /* Letakkan elemen di tengah secara horizontal */
+    align-items: center; /* Letakkan elemen di tengah secara vertikal */
+    flex-wrap: wrap; /* Agar elemen bisa bergerak jika ruang terbatas */
+    position: relative; /* Untuk membantu posisi elemen lain */
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+/* Header judul menu di WizzmieAdmin */
+.wizzmie-admin h2 {
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto; /* Pastikan judul berada di tengah */
+    padding: 5px 0; /* Kurangi padding atas dan bawah untuk menggeser ke atas */
+    font-size: 35px;
+    margin-top: -10px; /* Tambahkan margin negatif untuk mendorong ke atas */
+}
+
+/* Tombol tambah menu di WizzmieAdmin */
+.wizzmie-admin .btn-tambah-menu {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px !important;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    position: absolute; /* Letakkan tombol di posisi absolut */
+    right: 10px !important; /* Pastikan tombol berada di kanan */
+    top: 50%; /* Posisi vertikal tombol */
+    transform: translateY(-50%); /* Sesuaikan posisi vertikal */
+}
+
+.wizzmie-admin .btn-tambah-menu:hover {
+    background-color: #0056b3;
+}
+
+/* Container kartu menu di WizzmieAdmin */
+.wizzmie-admin .card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style untuk kartu di WizzmieAdmin */
+.wizzmie-admin .card {
+    width: 10rem;
+    text-align: center;
+    border: none;
+    background: none;
+}
+
+.wizzmie-admin .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Judul dalam kartu di WizzmieAdmin */
+.wizzmie-admin .card .btn {
+    background: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.wizzmie-admin .card .btn:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+/* Layout dasar untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Hilangkan border dan background button */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 768px) {
+    .wizzmie-admin .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

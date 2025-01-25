@@ -1,0 +1,62 @@
+/* Rating Card */
+.rating-card {
+  background-color: #fff; 
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0; 
+}
+
+.rating-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rating-stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.rating-stars .active {
+  color: #ffc107; /* Warna bintang aktif */
+}
+
+.rating-label {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.rating-line {
+  background-color: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+  margin-bottom: 8px;
+}
+
+.rating-line-filled {
+  background-color: #007bff;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* Ulasan Card */
+.ulasan-card {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+textarea {
+  resize: none;
+}

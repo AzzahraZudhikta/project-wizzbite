@@ -1,0 +1,22 @@
+.opening-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Mengisi seluruh tinggi layar */
+    background: linear-gradient(to right, #FE8311, #FE1111); /* Warna latar belakang sesuai dengan desain */
+  }
+  
+  .opening-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black; /* Pastikan kontras cukup */
+    text-align: center;
+  }
+  
+  .font-1 {
+    font-family: 'Lilita One', sans-serif;
+  }
+  
+  .font-2 {
+    font-family: 'Permanent Marker', sans-serif; /* Mengganti 'Ravie' dengan 'Permanent Marker' */
+  }

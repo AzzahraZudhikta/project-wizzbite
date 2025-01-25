@@ -1,0 +1,78 @@
+/* Warna latar belakang halaman */
+body {
+  font-family: 'Poppins', sans-serif; /* Font utama */
+  font-size: 16px; /* Ukuran font default */
+  color: #333; /* Warna teks default */
+  background-color: #f8f9fa; /* Warna latar belakang */
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling Sidebar */
+.sidebar {
+  background-color: #FF7A00;
+  color: white;
+  font-family: 'Roboto', sans-serif; /* Font untuk sidebar */
+  font-size: 14px;
+}
+
+.sidebar-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-link {
+  color: white;
+  font-size: 1.1em;
+}
+
+.nav-link:hover {
+  color: lightgray;
+}
+
+/* Area Konten Utama */
+.upload-container {
+  font-family: 'Poppins', sans-serif; /* Font utama untuk konten */
+  font-size: 16px;
+  color: #333;
+}
+
+.upload-container h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #5C828A;
+  text-align: left;
+}
+
+.upload-container p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Form Upload */
+form {
+  font-family: 'Roboto', sans-serif;
+}
+
+form .form-label {
+  font-size: 1em;
+  color: #333;
+  font-weight: 600;
+}
+
+form .form-control {
+  font-size: 0.9em;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form .form-control:focus {
+  border-color: #5C828A;
+  box-shadow: 0 0 5px rgba(92, 130, 138, 0.5); /* Pastikan nilai rgba() lengkap */
+}

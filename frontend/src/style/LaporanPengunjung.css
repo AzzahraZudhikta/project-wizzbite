@@ -1,0 +1,27 @@
+.visitor-report-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .charts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  
+  .dashboard-chart {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    font-size: 0.75rem;
+    height: 180px; /* Memperkecil tinggi grafik */
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-chart {
+      height: 150px; /* Lebih kecil pada layar kecil */
+    }
+  }

@@ -1,0 +1,116 @@
+/* MenuAdmin.css */
+
+/* Reset margin dan padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style untuk main content di MenuAdmin */
+  .menu-admin .main-content {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+  }
+  
+  /* Header judul menu di MenuAdmin */
+  .menu-admin h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Style untuk kategori header di MenuAdmin */
+  .menu-admin .kategori-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .menu-admin .kategori-header p {
+    font-weight: bold;
+  }
+  
+  /* Tombol tambah kategori di MenuAdmin */
+  .menu-admin .btn-tambah-kategori {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-admin .btn-tambah-kategori:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Container kartu menu di MenuAdmin */
+  .menu-admin .card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Style untuk kartu di MenuAdmin */
+  .menu-admin .card {
+    width: 10rem;
+    text-align: center;
+    border: none;
+    background: none;
+  }
+  
+  .menu-admin .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Judul dalam kartu di MenuAdmin */
+  .menu-admin .card .btn {
+    background: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-admin .card .btn:hover {
+    text-decoration: underline;
+    color: #007bff; /* Menambahkan perubahan warna saat hover */
+  }
+  
+  /* Layout dasar untuk seluruh halaman */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Hilangkan border dan background button */
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+  }
+  
+  /* Responsivitas untuk layar kecil */
+  @media (max-width: 768px) {
+    .menu-admin .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

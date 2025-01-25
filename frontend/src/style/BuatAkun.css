@@ -1,0 +1,100 @@
+/* Reset global untuk menghilangkan margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gaya utama untuk container login */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Tinggi penuh viewport */
+  width: 100vw; /* Lebar penuh viewport */
+  color: white;
+  box-sizing: border-box;
+  padding: 20px; /* Memberikan sedikit ruang untuk elemen */
+}
+
+/* Gaya untuk halaman dengan background gradien */
+body.buat-akun-page {
+  background: linear-gradient(to bottom, #FF7A00, #FF0000); /* Gradien warna dari oranye ke merah */
+}
+
+/* Reset background untuk halaman lain */
+body {
+  background: white !important; /* Warna putih untuk halaman default */
+}
+
+/* Gaya untuk judul */
+.font-1 {
+  font-size: 3rem !important; /* Ukuran besar untuk teks judul */
+  color: #ffffff; /* Warna teks putih */
+  margin-bottom: 20px; /* Jarak di bawah judul */
+}
+
+/* Gaya form bootstrap */
+form {
+  width: 100%;
+  max-width: 400px; /* Maksimal lebar form */
+  background: white; /* Background putih untuk form */
+  border-radius: 8px; /* Sudut form melengkung */
+  padding: 20px; /* Jarak dalam form */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+/* Gaya untuk label form */
+form label {
+  font-size: 1rem !important; /* Ukuran teks label */
+  font-weight: bold;
+  color: #333333; /* Warna teks label */
+}
+
+/* Gaya untuk input form */
+form .form-control {
+  font-size: 1rem; /* Ukuran teks di dalam input */
+  padding: 10px; /* Padding dalam input */
+  border-radius: 5px; /* Sudut melengkung */
+  border: 1px solid #cccccc; /* Border abu-abu */
+  margin-bottom: 15px; /* Jarak antar input */
+}
+
+form .form-control:focus {
+  outline: none;
+  border-color: #FF7A00; /* Warna border saat fokus */
+  box-shadow: 0 0 5px rgba(255, 122, 0, 0.5); /* Bayangan saat fokus */
+}
+
+/* Gaya tombol utama */
+.login-button {
+  background-color: #ffc400; /* Warna tombol kuning */
+  color: #000000; /* Warna teks tombol */
+  font-size: 1rem;
+  padding: 10px 15px; /* Padding tombol */
+  border: none;
+  border-radius: 5px; /* Sudut melengkung tombol */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #FF7A00; /* Warna tombol saat hover */
+  color: white; /* Warna teks saat hover */
+}
+
+/* Gaya untuk link "Sudah Punya Akun?" */
+button.variant-link {
+  background: none; /* Hilangkan background tombol */
+  color: white; /* Warna teks putih */
+  font-size: 1rem;
+  border: none; /* Hilangkan border tombol */
+  text-decoration: underline; /* Garis bawah untuk teks */
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button.variant-link:hover {
+  color: #ffc400; /* Warna teks kuning saat hover */
+}

@@ -1,0 +1,104 @@
+/* Kontainer Profil Utama */
+.profil-content {
+    display: flex;
+    flex-direction: column; /* Elemen diatur vertikal */
+    align-items: center; /* Memusatkan konten secara horizontal */
+    justify-content: flex-start; /* Mulai dari atas */
+    padding: 40px; /* Ruang di dalam kontainer */
+    background-color: #F5F5F5; /* Warna latar belakang */
+    border-radius: 8px; /* Membulatkan sudut */
+    margin: 40px auto; /* Memusatkan secara vertikal dan horizontal */
+    max-width: 1000px; /* Lebar maksimum kontainer */
+    width: 90%; /* Lebar fleksibel berdasarkan layar */
+    height: calc(100vh - 80px); /* Membatasi tinggi kontainer ke viewport */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan agar lebih elegan */
+    overflow-y: auto; /* Aktifkan scroll jika konten melebihi tinggi */
+}
+
+/* Judul Profil */
+.profil-title {
+    font-size: 24px; /* Ukuran font yang menonjol */
+    font-weight: bold;
+    margin-bottom: 20px; /* Jarak bawah judul */
+    text-align: center; /* Memusatkan teks */
+}
+
+/* Gambar Profil */
+.profil-picture-container {
+    display: flex;
+    justify-content: center; /* Memusatkan gambar */
+    margin-bottom: 20px; /* Jarak bawah */
+}
+
+.profil-picture {
+    width: 80px; /* Lebar gambar */
+    height: 80px; /* Tinggi gambar */
+    border-radius: 50%; /* Membuat gambar bulat */
+    background-color: #D9D9D9; /* Warna default jika tidak ada gambar */
+}
+
+/* Form Profil */
+.profil-form {
+    width: 100%; /* Form mengisi seluruh lebar */
+    max-width: 600px; /* Batas maksimum lebar form */
+    margin: 0 auto 15px auto; /* Memusatkan form */
+}
+
+/* Elemen Form */
+.profil-form .form-group {
+    margin-bottom: 20px; /* Jarak antar elemen form */
+    display: flex;
+    flex-direction: column; /* Elemen diatur vertikal */
+    width: 100%;
+}
+
+/* Input Form */
+.profil-form input {
+    padding: 10px; /* Padding di dalam input */
+    font-size: 14px; /* Ukuran teks input */
+    border: 1px solid #ccc; /* Border input */
+    border-radius: 4px; /* Membulatkan sudut input */
+    width: 100%; /* Input menyesuaikan lebar form */
+}
+
+/* Tombol "Selesai" */
+.profil-form .form-group.text-center .btn {
+    width: 150px; /* Lebar tombol */
+    background-color: #5C828A; /* Warna tombol */
+    color: white; /* Warna teks */
+    font-size: 16px; /* Ukuran teks tombol */
+    padding: 10px 20px; /* Padding tombol */
+    border-radius: 5px; /* Membulatkan sudut tombol */
+    border: none; /* Menghilangkan border */
+    transition: background-color 0.3s ease; /* Animasi saat hover */
+    margin: 20px auto; /* Memusatkan tombol */
+    display: block; /* Membuat tombol berada di baris terpisah */
+}
+
+/* Hover Effect untuk Tombol */
+.profil-form .form-group.text-center .btn:hover {
+    background-color: #467074; /* Warna saat di-hover */
+    color: #FFF; /* Teks tetap putih */
+}
+
+/* Responsif: Untuk layar kecil */
+@media (max-width: 768px) {
+    .profil-content {
+        width: 95%; /* Lebar lebih besar pada layar kecil */
+        margin: 20px auto; /* Kurangi margin */
+    }
+
+    .profil-title {
+        font-size: 20px; /* Ukuran font lebih kecil */
+    }
+
+    .profil-picture {
+        width: 60px; /* Gambar lebih kecil */
+        height: 60px;
+    }
+
+    .profil-form .form-group.text-center .btn {
+        width: 100%; /* Tombol memenuhi lebar layar */
+        font-size: 14px; /* Ukuran teks lebih kecil */
+    }
+}

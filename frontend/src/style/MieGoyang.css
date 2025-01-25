@@ -1,0 +1,42 @@
+/* Mengurangi jarak untuk teks Selamat Datang dan Daftar Menu Mie Goyang */
+.content h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-top: 0; /* Menghapus atau mengurangi jarak atas */
+  margin-bottom: 10px; /* Mengurangi jarak bawah */
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px; /* Mengurangi jarak atas */
+  margin-bottom: 5px; /* Mengurangi jarak bawah */
+}
+
+.content p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 5px; /* Mengurangi jarak atas */
+  margin-bottom: 15px; /* Mengurangi jarak bawah */
+}
+.minuman-container {
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto; /* Ensure content can scroll vertically */
+  height: auto; /* Allow height to grow based on content */
+  max-height: calc(100vh - 60px); /* Max height based on the viewport height minus header */
+}
+
+/* Optional: If you want to add space between the items */
+.menu-item-container {
+  overflow-y: auto;
+  height: 70vh;
+  padding-right: 10px;
+}
+
+
+/* Specific styling for h2, h3, and p if needed */
+.content h2, .content h3, .content p {
+  margin-bottom: 15px; /* Adjust spacing for content readability */
+}
+

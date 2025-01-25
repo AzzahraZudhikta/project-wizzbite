@@ -1,0 +1,137 @@
+/* Reset margin dan padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Layout dasar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.genk-dimsum-admin {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.genk-dimsum-admin .main-content {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto; /* Menambahkan scroll jika konten lebih tinggi */
+    height: calc(100vh - 60px); /* Menyesuaikan tinggi agar bagian ini dapat scroll */
+    box-sizing: border-box;
+}
+
+/* Judul menu */
+.genk-dimsum-admin h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Tombol tambah menu */
+.genk-dimsum-admin .btn-tambah-menu {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+}
+
+.genk-dimsum-admin .btn-tambah-menu:hover {
+    background-color: #0056b3;
+}
+
+/* Container kartu */
+.genk-dimsum-admin .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kartu per baris */
+    gap: 20px;
+    justify-content: flex-start; /* Geser kartu ke kiri */
+    margin-left: 400px;
+    margin-bottom: 30px;
+}
+
+/* Style untuk kartu */
+.genk-dimsum-admin .card {
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.genk-dimsum-admin .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.genk-dimsum-admin .card .btn {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 8px 12px;
+}
+
+.genk-dimsum-admin .card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Aksi edit dan delete */
+.genk-dimsum-admin .card-actions {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.genk-dimsum-admin .card-actions svg {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.genk-dimsum-admin .card-actions svg:hover {
+    transform: scale(1.2);
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .genk-dimsum-admin .card-container {
+        grid-template-columns: 1fr; /* Satu kartu per baris di layar kecil */
+    }
+}
+
+.menu-title {
+    font-size: 1.2em; /* Ukuran font untuk nama menu */
+    font-weight: bold; /* Nama menu lebih tebal */
+    margin: 0; /* Hilangkan margin default */
+}
+
+.menu-price {
+    font-size: 1em; /* Ukuran font untuk harga */
+    font-weight: bold;
+    color: #161718; /* Warna teks untuk harga */
+    margin: 0; /* Hilangkan margin default */
+}
+
+.card-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}

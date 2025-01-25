@@ -1,0 +1,43 @@
+/* Styling Sidebar */
+.sidebar {
+  background-color: #FF7A00; /* Warna oranye */
+  color: white;
+  width: 200px; /* Lebar sidebar */
+  height: 100vh; /* Tinggi penuh */
+  position: fixed; /* Sidebar tetap di kiri */
+  top: 0;
+  left: 0; /* Letakkan sidebar di paling kiri */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Konten mulai dari atas */
+  padding: 10px; /* Tambahkan padding */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
+
+.sidebar-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center; /* Judul di tengah */
+}
+
+.nav-link {
+  color: white;
+  font-size: 1.1em;
+  margin: 5px 0; /* Jarak antar link */
+  padding: 10px;
+  text-decoration: none; /* Hapus garis bawah */
+  border-radius: 5px; /* Tambahkan sudut melengkung */
+}
+
+.nav-link:hover {
+  background-color: #FFB266; /* Warna oranye muda saat hover */
+  color: black;
+}
+
+/* Styling Konten */
+.content-area 
+  margin-left: 200px; /* Sesuaikan jarak konten dengan sidebar */
+  padding: 20px;
+  overflow-y: auto;
+}

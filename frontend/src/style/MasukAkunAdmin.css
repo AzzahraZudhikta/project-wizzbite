@@ -1,0 +1,73 @@
+/* Mengatur html dan body agar tidak ada margin/padding dan memenuhi layar penuh */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Memastikan tinggi penuh untuk html dan body */
+    overflow: hidden; /* Menghilangkan scrollbar jika ada */
+}
+
+/* Gaya untuk container Masuk Akun */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Memastikan container memiliki tinggi penuh layar */
+    justify-content: center;
+    background: linear-gradient(to bottom, #ff7b00, #b31b00); /* Gradien warna dari oranye ke merah */
+    color: white;
+    font-size: 1.2em; /* Menambah ukuran teks pada container */
+}
+
+/* Gaya untuk judul "Masuk Akun" */
+.font-1 {
+    font-size: 3em; /* Memperbesar ukuran teks */
+    color: #010101; /* Menentukan warna teks putih */
+    margin-bottom: 20px; /* Memberikan jarak bawah */
+}
+
+/* Gaya untuk input form */
+.form-control {
+    width: 90%;  /* Lebar input 90% dari lebar container */
+    max-width: 500px; /* Max width agar input tidak terlalu besar */
+    margin: 10px 0; /* Memberikan jarak antara input */
+    padding: 15px; /* Menambah padding agar lebih nyaman digunakan */
+    font-size: 1.1em; /* Ukuran font di dalam input */
+    border-radius: 8px; /* Membuat sudut input lebih melengkung */
+    border: 1px solid #cccccc; /* Warna border */
+    color: #333; /* Warna teks dalam input */
+}
+
+/* Gaya untuk tombol Masuk */
+button[type="submit"] {
+    background-color: #ffc400; /* Warna tombol kuning yang lebih cerah */
+    color: black;
+    padding: 15px 30px; /* Memperbesar padding untuk proporsi */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 18px; /* Memperbesar ukuran teks tombol */
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #FF7A00; /* Mengubah warna tombol saat di-hover */
+}
+
+/* Gaya untuk link ke halaman buat akun */
+a {
+    color: #FF7A00; /* Warna default putih */
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.2em; /* Memperbesar ukuran teks link */
+}
+
+a:hover {
+    color: #ffc400; /* Warna ketika di-hover menjadi kuning */
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
+
+a:active {
+    color: #ff0000; /* Warna ketika ditekan (saat diklik) menjadi merah */
+}

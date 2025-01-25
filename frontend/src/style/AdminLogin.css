@@ -1,0 +1,50 @@
+/* Gaya untuk kontainer AdminLogin */
+.admin-login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fa7700;
+}
+
+/* Gaya untuk gambar logo */
+.image-placeholder {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.Logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Gaya untuk tombol */
+.admin-login-button {
+  background-color: #3A5A5D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+}
+
+.admin-login-button:hover {
+  background-color: #5C828A;
+  cursor: pointer;
+}
+
+/* Gaya untuk heading dan deskripsi */
+.font-1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3A5A5D;
+}
+
+.card-text {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,83 @@
+/* Struktur utama */
+.mie-goyang-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .mie-goyang-content {
+    display: flex;
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .main-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Header bagian atas */
+  .header-section {
+    text-align: left;
+    background-color: #ffffff !important;
+    border-radius: 10px;
+    padding: 15px 20px; /* Perkecil padding */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0px;
+    max-width: 900px; /* Batasi lebar kotak */
+    margin-left: 20%; /* Geser lebih jauh ke kanan */
+    margin-right: auto; /* Tambahkan kesan bergeser ke kanan */
+  }
+  
+  /* Geser tombol tambah level agar tetap rapi */
+  .button-container {
+    display: flex;
+    justify-content: flex-end; /* Posisikan tombol di kanan */
+    margin-top: 10px;
+  }
+  
+  .add-level-btn {
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-level-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Kartu level */
+  .level-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: flex-start; /* Mengatur posisi ke kiri */
+    margin-left: 20% !important; /* Geser semua kartu ke kanan */
+    margin-top: 80px !important;
+  }
+  
+  .level-card {
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+  }
+  
+  .level-card img {
+    max-height: 150px;
+    object-fit: cover;
+  }
+  
+  .level-card .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  

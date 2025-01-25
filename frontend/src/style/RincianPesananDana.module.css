@@ -1,0 +1,111 @@
+/* RincianPesananDana.css */
+
+/* Styling untuk seluruh container */
+.Container {
+    background-color: #f8f9fa; /* Warna latar belakang yang soft */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Sidebar styling */
+  .Navbar {
+    background-color: #343a40; /* Warna abu-abu gelap */
+    color: white;
+    padding: 20px;
+  }
+  
+  .Nav h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffc107; /* Warna kuning untuk brand */
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .nav-item {
+    margin-bottom: 15px;
+  }
+  
+  .nav-link {
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffc107;
+    text-decoration: none;
+  }
+  
+  /* Card utama */
+  .Card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .Card h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Tabel rincian pesanan */
+  .Table {
+    font-size: 0.95rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .Table th {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+  }
+  
+  .Table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  /* Info pembayaran */
+  .payment-info {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .payment-info .text-end {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Tombol */
+  .Button {
+    border-radius: 20px;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+  
+  .Button-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .Button-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .Button-secondary {
+    background-color: #6c757d;
+    border: none;
+  }
+  
+  .Button-secondary:hover {
+    background-color: #5a6268;
+  }
+  

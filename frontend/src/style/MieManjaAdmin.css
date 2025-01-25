@@ -1,0 +1,134 @@
+/* General Container Styling */
+.mie-manja-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Background ringan */
+}
+  
+/* Content Section Styling */
+.mie-manja-content {
+    display: flex;
+    flex: 1;
+}
+  
+/* Main Section */
+.main-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff; /* Warna putih untuk kontras */
+    border-left: 1px solid #dee2e6; /* Garis pembatas dengan sidebar */
+    border-top: 1px solid #dee2e6;
+}
+  
+/* Header Section */
+.header-section h5 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #343a40; /* Warna teks utama */
+}
+  
+.header-section p {
+    font-size: 14px;
+    color: #6c757d; /* Warna teks sekunder */
+}
+  
+/* Card Styling */
+.menu-card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: #ffffff;
+
+    /* Tambahkan margin untuk menggeser lebih ke kanan */
+    margin-left: 250px;
+    margin-top: 80px;
+}
+  
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+  
+/* Card Image */
+.menu-card img {
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #dee2e6;
+}
+  
+/* Card Body */
+.menu-card .card-body {
+    padding: 15px;
+}
+  
+.menu-card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+  
+.menu-card .card-text {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+  
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.action-buttons .btn {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+  
+.action-buttons .btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+  
+.action-buttons .btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+  
+.action-buttons .btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+  
+.action-buttons .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+  
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .header-section h5 {
+        font-size: 20px;
+    }
+  
+    .menu-card img {
+        height: 120px;
+    }
+  
+    .menu-card .card-title {
+        font-size: 16px;
+    }
+  
+    .menu-card .card-text {
+        font-size: 12px;
+    }
+  
+    .action-buttons .btn {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+}
